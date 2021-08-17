@@ -14,3 +14,5 @@ Some things to think about:
 - What are the actions that need to be handled?
 - When should I bind / unbind with the Presenter?
 
+If you want to look at a possible solution, switch to the `completed` branch.
+
