@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MVP</string>
+
+    <string name="save">👌</string>
+    <string name="unsave">👎</string>
+    <string name="switch_pin">➡️</string>
+    <string name="saved_badge">Saved</string>
+</resources>

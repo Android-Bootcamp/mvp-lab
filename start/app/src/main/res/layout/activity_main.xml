@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/pin_image"
+        android:layout_width="250dp"
+        android:layout_height="0dp"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="9:16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:background="@color/cardview_dark_background" />
+
+    <TextView
+        android:id="@+id/pin_saved_badge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/badge_shape"
+        android:gravity="center"
+        android:text="@string/saved_badge"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/pin_image"
+        app:layout_constraintEnd_toEndOf="@id/pin_image"
+        tools:visibility="visible"
+        />
+
+    <TextView
+        android:id="@+id/pin_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/gestalt_button_height"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/button_shape"
+        android:backgroundTint="@color/gestalt_gray"
+        android:gravity="center"
+        android:minWidth="@dimen/gestalt_button_min_width"
+        android:text="@string/switch_pin"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="@dimen/gestalt_text_button"
+        app:layout_constraintStart_toStartOf="@id/pin_image"
+        app:layout_constraintTop_toBottomOf="@id/pin_image"
+        app:layout_constraintEnd_toStartOf="@id/pin_save"
+        app:layout_constraintHorizontal_chainStyle="packed"/>
+
+    <TextView
+        android:id="@+id/pin_save"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/button_shape"
+        android:gravity="center"
+        android:minWidth="80dp"
+        android:text="@string/save"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/gestalt_text_button"
+        app:layout_constraintStart_toEndOf="@id/pin_switch"
+        app:layout_constraintEnd_toEndOf="@id/pin_image"
+        app:layout_constraintTop_toBottomOf="@id/pin_image" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
