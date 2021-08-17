@@ -36,7 +36,7 @@
         />
 
     <TextView
-        android:id="@+id/pin_switch"
+        android:id="@+id/pin_next"
         android:layout_width="wrap_content"
         android:layout_height="@dimen/gestalt_button_height"
         android:layout_marginTop="8dp"
@@ -66,7 +66,7 @@
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="@dimen/gestalt_text_button"
-        app:layout_constraintStart_toEndOf="@id/pin_switch"
+        app:layout_constraintStart_toEndOf="@id/pin_next"
         app:layout_constraintEnd_toEndOf="@id/pin_image"
         app:layout_constraintTop_toBottomOf="@id/pin_image" />
 
